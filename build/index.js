@@ -6,7 +6,7 @@ var server = http.createServer(function (req, res) {
         // set response header
         res.writeHead(200, { 'Content-Type': 'text/html' });
         // set response content    
-        res.write('<html><body><p>This is home Page.</p><p>second paragraph</p></body></html>');
+        res.write("<html><body>\n      < p > This is home Page.< /p>\n      <p>second paragraph</p>\n      <p>third paragraph</p>\n      <p>forth paragraph</p>\n      <p>fifth paragraph</p>\n      </body></html >");
         res.end();
     }
     else if (req.url == "/student") {
